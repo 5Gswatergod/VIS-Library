@@ -66,6 +66,8 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Data", "Data", "{D8828DAF-9
 		VISLibraryContext.cs = VISLibraryContext.cs
 	EndProjectSection
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "VIS Library Websites", "..\VIS Library Websites\VIS Library Websites.csproj", "{34F7E029-5AAA-4166-98A3-66932096EBBA}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -78,6 +80,10 @@ Global
 		{A94CE185-F2C4-49C2-97BE-6EE820B97B2D}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{A94CE185-F2C4-49C2-97BE-6EE820B97B2D}.Release|Any CPU.Build.0 = Release|Any CPU
 		{A94CE185-F2C4-49C2-97BE-6EE820B97B2D}.Release|Any CPU.Deploy.0 = Release|Any CPU
+		{34F7E029-5AAA-4166-98A3-66932096EBBA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{34F7E029-5AAA-4166-98A3-66932096EBBA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{34F7E029-5AAA-4166-98A3-66932096EBBA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{34F7E029-5AAA-4166-98A3-66932096EBBA}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
