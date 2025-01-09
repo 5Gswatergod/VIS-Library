@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Book Search</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="sidebar">
+            <h2>Sort Options</h2>
+            <div class="sort-by">
+                <h3>Sort By:</h3>
+                <select id="sortBy">
+                    <option value="relevance">Relevance</option>
+                    <option value="date">Date</option>
+                    <option value="alphabet">Alphabet</option>
+                    <option value="availability">Alphabet</option>
+                </select>
+            </div>
+            <div class="filter-by">
+                <h3>Filter By:</h3>
+                <div>
+                    <label for="title">Title:</label>
+                    <input type="text" id="title" placeholder="Enter title">
+                </div>
+                <div>
+                    <label for="author">Author:</label>
+                    <input type="text" id="author" placeholder="Enter author">
+                </div>
+            </div>
+        </div>
+        <div class="book-gallery">
+            <h2>Book Results</h2>
+            <div class="book-grid">
+            </div>
+        </div>
+        <a href="index.html"><button>Logout</button></a>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

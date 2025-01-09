@@ -1,0 +1,111 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.11.35222.181
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{00D1A9C2-B5F0-4AF3-8072-F6C62B433612}") = "VIS Liabrary", "VIS Liabrary.sqlproj", "{A94CE185-F2C4-49C2-97BE-6EE820B97B2D}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "VISLibraryManagementSystem", "VISLibraryManagementSystem", "{2E962D7F-5D13-4DBE-B844-A53F5BC6497C}"
+	ProjectSection(SolutionItems) = preProject
+		App.config = App.config
+		Program.cs = Program.cs
+		README.md = README.md
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Backend", "Backend", "{EC045571-958A-40BB-9DC4-6D71D1DB5441}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Database", "Database", "{F7270CC0-E050-4252-BA4A-1DC18BB89429}"
+	ProjectSection(SolutionItems) = preProject
+		LibraryDB.sql = LibraryDB.sql
+		SeedData.sql = SeedData.sql
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Models", "Models", "{647AB515-F7F0-497F-B6E7-45C33F841F57}"
+	ProjectSection(SolutionItems) = preProject
+		Book.cs = Book.cs
+		BorrowedBook.cs = BorrowedBook.cs
+		MissingBook.cs = MissingBook.cs
+		Students.cs = Students.cs
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Services", "Services", "{52C76FAE-A35C-4514-9C53-61F55B4EDF41}"
+	ProjectSection(SolutionItems) = preProject
+		BookService.cs = BookService.cs
+		BorrowService.cs = BorrowService.cs
+		MissingService.cs = MissingService.cs
+		StudentService.cs = StudentService.cs
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Fronted", "Fronted", "{D2F79A25-E0C3-4A21-944D-FB182A1FCFF8}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Forms", "Forms", "{4D85936D-221D-4E05-B72C-E4702C9E144D}"
+	ProjectSection(SolutionItems) = preProject
+		BookManagementForm.cs = BookManagementForm.cs
+		BorrowReturnForm.cs = BorrowReturnForm.cs
+		DashBoardForm.cs = DashBoardForm.cs
+		StudentManagementForm.cs = StudentManagementForm.cs
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Controls", "Controls", "{EB5646C5-0388-4384-BB34-00E282A90F29}"
+	ProjectSection(SolutionItems) = preProject
+		DataGridViewHelper.cs = DataGridViewHelper.cs
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Utilities", "Utilities", "{2433AFEF-5A8F-4FFD-8ABA-E8D53C97EAC2}"
+	ProjectSection(SolutionItems) = preProject
+		DatabaseHelper.cs = DatabaseHelper.cs
+		ValidationHelper.cs = ValidationHelper.cs
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Resources", "Resources", "{9F49D67D-BBD4-438D-8C15-4001E94D0E5E}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Logs", "Logs", "{F014C9F9-3D04-48C6-8960-102621D7E68D}"
+	ProjectSection(SolutionItems) = preProject
+		Logs.txt = Logs.txt
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Reports", "Reports", "{86739289-6EC0-4583-AA17-D182A4BAAF2A}"
+	ProjectSection(SolutionItems) = preProject
+		BorrowingReport.cs = BorrowingReport.cs
+		StudentReport.cs = StudentReport.cs
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Images", "Images", "{72686C6C-C404-4A1E-8402-C4B3E4C28849}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Styles", "Styles", "{7EA9273C-F45A-48A9-A03D-4670CBFE192E}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{A94CE185-F2C4-49C2-97BE-6EE820B97B2D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A94CE185-F2C4-49C2-97BE-6EE820B97B2D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A94CE185-F2C4-49C2-97BE-6EE820B97B2D}.Debug|Any CPU.Deploy.0 = Debug|Any CPU
+		{A94CE185-F2C4-49C2-97BE-6EE820B97B2D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A94CE185-F2C4-49C2-97BE-6EE820B97B2D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A94CE185-F2C4-49C2-97BE-6EE820B97B2D}.Release|Any CPU.Deploy.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{EC045571-958A-40BB-9DC4-6D71D1DB5441} = {2E962D7F-5D13-4DBE-B844-A53F5BC6497C}
+		{F7270CC0-E050-4252-BA4A-1DC18BB89429} = {EC045571-958A-40BB-9DC4-6D71D1DB5441}
+		{647AB515-F7F0-497F-B6E7-45C33F841F57} = {EC045571-958A-40BB-9DC4-6D71D1DB5441}
+		{52C76FAE-A35C-4514-9C53-61F55B4EDF41} = {EC045571-958A-40BB-9DC4-6D71D1DB5441}
+		{D2F79A25-E0C3-4A21-944D-FB182A1FCFF8} = {2E962D7F-5D13-4DBE-B844-A53F5BC6497C}
+		{4D85936D-221D-4E05-B72C-E4702C9E144D} = {D2F79A25-E0C3-4A21-944D-FB182A1FCFF8}
+		{EB5646C5-0388-4384-BB34-00E282A90F29} = {D2F79A25-E0C3-4A21-944D-FB182A1FCFF8}
+		{2433AFEF-5A8F-4FFD-8ABA-E8D53C97EAC2} = {2E962D7F-5D13-4DBE-B844-A53F5BC6497C}
+		{9F49D67D-BBD4-438D-8C15-4001E94D0E5E} = {2E962D7F-5D13-4DBE-B844-A53F5BC6497C}
+		{F014C9F9-3D04-48C6-8960-102621D7E68D} = {2E962D7F-5D13-4DBE-B844-A53F5BC6497C}
+		{86739289-6EC0-4583-AA17-D182A4BAAF2A} = {2E962D7F-5D13-4DBE-B844-A53F5BC6497C}
+		{72686C6C-C404-4A1E-8402-C4B3E4C28849} = {9F49D67D-BBD4-438D-8C15-4001E94D0E5E}
+		{7EA9273C-F45A-48A9-A03D-4670CBFE192E} = {9F49D67D-BBD4-438D-8C15-4001E94D0E5E}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {B93A0A05-D5E5-4E30-87A5-0D0DAF6FEDA2}
+	EndGlobalSection
+EndGlobal
