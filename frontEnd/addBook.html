@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Library Portal - Add Book</title>
+    <style>
+        body {
+            font-family: 'Roboto', sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+        header {
+            background-color: #BB3431;
+            color: white;
+            padding: 1em;
+            text-align: center;
+        }
+        nav {
+            display: flex;
+            justify-content: center;
+            margin: 1em 0;
+        }
+        nav a {
+            margin: 0 1em;
+            text-decoration: none;
+            color: #BB3431;
+            font-weight: bold;
+        }
+        .container {
+            padding: 2em;
+            max-width: 800px;
+            margin: 0 auto;
+            text-align: center;
+        }
+        .form-section {
+            margin: 2em 0;
+        }
+        input[type="text"], input[type="password"] {
+            margin: 0.5em;
+            padding: 0.5em;
+            width: 80%;
+        }
+        button {
+            padding: 0.5em 1em;
+            background-color: #BB3431;
+            color: white;
+            border: none;
+            cursor: pointer;
+            margin: 1em;
+        }
+        button:hover {
+            background-color: #a92825;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Welcome to the Library Portal</h1>
+    </header>
+
+    <nav>
+        <a href="index.html">Landing</a>
+        <a href="search.html">Search Books</a>
+    </nav>
+
+    <div class="container">
+        <h2>Add Book</h2>
+        <div class="form-section">
+            <form action="/addBook" method="POST">
+                <input type="text" name="title" placeholder="Title" required>
+                <br>
+                <input type="text" name="author" placeholder="Author" required>
+                <br>
+                <input type="text" name="genre" placeholder="Genre" required>
+                <br>
+                <textarea name="description" placeholder="Description" rows="4"></textarea>
+                <br>
+                <input type="text" name="cover" placeholder="Cover Image URL" required>
+                <br>
+                <button type="submit">Add Book</button>
+            </form>
+        </div>
+    </div>
+</body>
+</html>
