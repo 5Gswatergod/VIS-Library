@@ -2,8 +2,9 @@
 {
     public class BorrowedBooks
     {
-        public int BorrowId { get; set; }
-        public string BookId { get; set; }
+        [key]
+        public int BorrowID { get; set; }
+        public string BookID { get; set; }
         public int StudentID { get; set; }
         public string BorrowDate { get; set; }
         public string DueDate { get; set; }

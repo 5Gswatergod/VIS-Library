@@ -25,6 +25,7 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Models", "Models", "{647AB5
 		backend\Models\Book.cs = backend\Models\Book.cs
 		backend\Models\BorrowedBook.cs = backend\Models\BorrowedBook.cs
 		backend\Models\MissingBook.cs = backend\Models\MissingBook.cs
+		backend\Models\Staff.cs = backend\Models\Staff.cs
 		backend\Models\Students.cs = backend\Models\Students.cs
 	EndProjectSection
 EndProject
@@ -60,6 +61,11 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Images", "Images", "{72686C
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Styles", "Styles", "{7EA9273C-F45A-48A9-A03D-4670CBFE192E}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Data", "Data", "{D8828DAF-98EE-4DF3-B763-CA8EB36D3220}"
+	ProjectSection(SolutionItems) = preProject
+		VISLibraryContext.cs = VISLibraryContext.cs
+	EndProjectSection
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -87,6 +93,7 @@ Global
 		{86739289-6EC0-4583-AA17-D182A4BAAF2A} = {2E962D7F-5D13-4DBE-B844-A53F5BC6497C}
 		{72686C6C-C404-4A1E-8402-C4B3E4C28849} = {9F49D67D-BBD4-438D-8C15-4001E94D0E5E}
 		{7EA9273C-F45A-48A9-A03D-4670CBFE192E} = {9F49D67D-BBD4-438D-8C15-4001E94D0E5E}
+		{D8828DAF-98EE-4DF3-B763-CA8EB36D3220} = {EC045571-958A-40BB-9DC4-6D71D1DB5441}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {B93A0A05-D5E5-4E30-87A5-0D0DAF6FEDA2}
