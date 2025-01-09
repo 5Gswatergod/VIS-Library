@@ -7,7 +7,7 @@ Project("{00D1A9C2-B5F0-4AF3-8072-F6C62B433612}") = "VIS Liabrary", "VIS Liabrar
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "VISLibraryManagementSystem", "VISLibraryManagementSystem", "{2E962D7F-5D13-4DBE-B844-A53F5BC6497C}"
 	ProjectSection(SolutionItems) = preProject
-		App.config = App.config
+		App.json = App.json
 		Program.cs = Program.cs
 		README.md = README.md
 	EndProjectSection
@@ -16,43 +16,44 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Backend", "Backend", "{EC04
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Database", "Database", "{F7270CC0-E050-4252-BA4A-1DC18BB89429}"
 	ProjectSection(SolutionItems) = preProject
-		LibraryDB.sql = LibraryDB.sql
-		SeedData.sql = SeedData.sql
+		backend\Database\LibraryDB.sql = backend\Database\LibraryDB.sql
+		backend\Database\SeedData.sql = backend\Database\SeedData.sql
 	EndProjectSection
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Models", "Models", "{647AB515-F7F0-497F-B6E7-45C33F841F57}"
 	ProjectSection(SolutionItems) = preProject
-		Book.cs = Book.cs
-		BorrowedBook.cs = BorrowedBook.cs
-		MissingBook.cs = MissingBook.cs
-		Students.cs = Students.cs
+		backend\Models\Book.cs = backend\Models\Book.cs
+		backend\Models\BorrowedBook.cs = backend\Models\BorrowedBook.cs
+		backend\Models\MissingBook.cs = backend\Models\MissingBook.cs
+		backend\Models\Students.cs = backend\Models\Students.cs
 	EndProjectSection
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Services", "Services", "{52C76FAE-A35C-4514-9C53-61F55B4EDF41}"
 	ProjectSection(SolutionItems) = preProject
-		BookService.cs = BookService.cs
-		BorrowService.cs = BorrowService.cs
-		MissingService.cs = MissingService.cs
-		StudentService.cs = StudentService.cs
+		backend\Services\BookService.cs = backend\Services\BookService.cs
+		backend\Services\BorrowService.cs = backend\Services\BorrowService.cs
+		backend\Services\MissingService.cs = backend\Services\MissingService.cs
+		backend\Services\StudentService.cs = backend\Services\StudentService.cs
 	EndProjectSection
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Utilities", "Utilities", "{2433AFEF-5A8F-4FFD-8ABA-E8D53C97EAC2}"
 	ProjectSection(SolutionItems) = preProject
-		DatabaseHelper.cs = DatabaseHelper.cs
-		ValidationHelper.cs = ValidationHelper.cs
+		Utilities\DatabaseHelper.cs = Utilities\DatabaseHelper.cs
+		Utilities\DataGridViewHelper.cs = Utilities\DataGridViewHelper.cs
+		Utilities\ValidationHelper.cs = Utilities\ValidationHelper.cs
 	EndProjectSection
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Resources", "Resources", "{9F49D67D-BBD4-438D-8C15-4001E94D0E5E}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Logs", "Logs", "{F014C9F9-3D04-48C6-8960-102621D7E68D}"
 	ProjectSection(SolutionItems) = preProject
-		Logs.txt = Logs.txt
+		Logs\Logs.txt = Logs\Logs.txt
 	EndProjectSection
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Reports", "Reports", "{86739289-6EC0-4583-AA17-D182A4BAAF2A}"
 	ProjectSection(SolutionItems) = preProject
-		BorrowingReport.cs = BorrowingReport.cs
-		StudentReport.cs = StudentReport.cs
+		Reports\BorrowingReport.cs = Reports\BorrowingReport.cs
+		Reports\StudentReport.cs = Reports\StudentReport.cs
 	EndProjectSection
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Images", "Images", "{72686C6C-C404-4A1E-8402-C4B3E4C28849}"
