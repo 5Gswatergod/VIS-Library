@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Library Portal</title>
+    <title>Library Portal - Teacher Dashboard</title>
     <style>
         body {
             font-family: 'Roboto', sans-serif;
@@ -36,17 +36,13 @@
         .form-section {
             margin: 2em 0;
         }
-        input[type="text"], input[type="password"] {
-            margin: 0.5em;
-            padding: 0.5em;
-            width: 80%;
-        }
         button {
             padding: 0.5em 1em;
             background-color: #BB3431;
             color: white;
             border: none;
             cursor: pointer;
+            margin: 1em;
         }
         button:hover {
             background-color: #a92825;
@@ -58,11 +54,17 @@
         <h1>Welcome to the Library Portal</h1>
     </header>
 
+    <nav>
+        <a href="index.html">Landing</a>
+        <a href="search.html">Search Books</a>
+    </nav>
+
     <div class="container">
-        <h2>Choose Your Role</h2>
+        <h2>Teacher Dashboard</h2>
         <div class="form-section">
-            <a href="TeacherLogin.html"><button>I am a Teacher</button></a>
-            <a href="StudentLogin.html"><button>I am a Student</button></a>
+            <a href="addBook.html"><button>Add Book</button></a>
+            <a href="search.html"><button>Search Book</button></a>
+            <a href="removeBook.html"><button>Remove Book</button></a>
         </div>
     </div>
 </body>

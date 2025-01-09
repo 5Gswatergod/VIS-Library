@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Library Portal</title>
+    <title>Library Portal - Add Book</title>
     <style>
         body {
             font-family: 'Roboto', sans-serif;
@@ -47,6 +47,7 @@
             color: white;
             border: none;
             cursor: pointer;
+            margin: 1em;
         }
         button:hover {
             background-color: #a92825;
@@ -58,11 +59,27 @@
         <h1>Welcome to the Library Portal</h1>
     </header>
 
+    <nav>
+        <a href="index.html">Landing</a>
+        <a href="search.html">Search Books</a>
+    </nav>
+
     <div class="container">
-        <h2>Choose Your Role</h2>
+        <h2>Add Book</h2>
         <div class="form-section">
-            <a href="TeacherLogin.html"><button>I am a Teacher</button></a>
-            <a href="StudentLogin.html"><button>I am a Student</button></a>
+            <form action="/addBook" method="POST">
+                <input type="text" name="title" placeholder="Title" required>
+                <br>
+                <input type="text" name="author" placeholder="Author" required>
+                <br>
+                <input type="text" name="genre" placeholder="Genre" required>
+                <br>
+                <textarea name="description" placeholder="Description" rows="4"></textarea>
+                <br>
+                <input type="text" name="cover" placeholder="Cover Image URL" required>
+                <br>
+                <button type="submit">Add Book</button>
+            </form>
         </div>
     </div>
 </body>

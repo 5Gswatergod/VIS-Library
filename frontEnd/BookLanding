@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Book Details</title>
+    <style>
+        body {
+            font-family: 'Roboto', sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+        .book-details {
+            background-color: white;
+            padding: 2em;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+            display: flex;
+            gap: 2em;
+            max-width: 800px;
+        }
+        .cover-image {
+            width: 200px;
+        }
+        .details {
+            flex: 1;
+        }
+        .details h2 {
+            margin-bottom: 0.5em;
+        }
+        .details p {
+            margin: 0.5em 0;
+        }
+        button {
+            padding: 0.5em 1em;
+            background-color: #BB3431;
+            color: white;
+            border: none;
+            cursor: pointer;
+            border-radius: 5px;
+        }
+        button:hover {
+            background-color: #a92825;
+        }
+        .back-button {
+            text-align: center;
+            margin-bottom: 1em; /* Add some spacing below the button */
+        }
+    </style>
+</head>
+<body>
+    <div class="back-button">
+        <a href="search.html"><button>Back to Search</button>
+        </a>
+    </div>
+    <div class="book-details">
+        <div class="cover-image">
+            <img src="book-cover.jpg" alt="Book Cover">
+        </div>
+        <div class="details">
+            <h2>Book Title</h2>
+            <p>Author: Author Name</p>
+            <p>Genre: Genre</p>
+            <p>Description: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec ultricies, odio non laoreet mattis, turpis sapien bibendum eros, eu feugiat justo massa vel nulla.</p>
+            <p>Availability: Available</p>
+            <button>Reserve Book</button>
+            <button>Borrow Book</button>
+        </div>
+    </div>
+    
+</body>
+</html>
