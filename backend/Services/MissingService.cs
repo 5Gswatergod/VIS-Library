@@ -1,10 +1,10 @@
-﻿using VISLibraryManagementSystem.Models;
+﻿using VISLMS.Models;
 using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Data.Sqlclient;
 
-namespace VISLibraryManagementSystem.Services
+namespace VISLMS.Services
 {
     public class MissingBooksService
     {

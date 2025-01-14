@@ -34,7 +34,7 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Services", "Services", "{52
 		backend\Services\BookService.cs = backend\Services\BookService.cs
 		backend\Services\BorrowService.cs = backend\Services\BorrowService.cs
 		backend\Services\MissingService.cs = backend\Services\MissingService.cs
-		backend\Services\StudentService.cs = backend\Services\StudentService.cs
+		backend\Services\UsersService.cs = backend\Services\UsersService.cs
 	EndProjectSection
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Utilities", "Utilities", "{2433AFEF-5A8F-4FFD-8ABA-E8D53C97EAC2}"

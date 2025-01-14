@@ -2,7 +2,7 @@
 using System.Data;
 using System.Data.SqlClient;
 
-namespace VISLibraryManagementSystem.Utilities
+namespace VISLMS.Utilities
 {
     public class DatabaseHelper
     {

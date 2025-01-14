@@ -1,13 +1,13 @@
 ﻿// StudentReportForm.cs: Form for generating and viewing student reports
 
-using VISLibraryManagementSystem.Helpers;
-using VISLibraryManagementSystem.Models;
-using VISLibraryManagementSystem.Services;
+using VISLMS.Helpers;
+using VISLMS.Models;
+using VISLMS.Services;
 using System;
 using System.Collections.Generic;
 using System.Windows.Forms;
 
-namespace VISLibraryManagementSystem.Forms
+namespace VISLMS.Forms
 {
     public partial class StudentReportForm : Form
     {

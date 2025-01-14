@@ -1,4 +1,4 @@
-﻿namespace VISLibraryManagementSystem.Models
+﻿namespace VISLMS.Models
 {
     public class BorrowedBooks
     {

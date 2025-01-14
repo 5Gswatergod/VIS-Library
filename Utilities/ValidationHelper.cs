@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Text.RegularExpressions;
 
-namespace VISLibraryManagementSystem.Utilities
+namespace VISLMS.Utilities
 {
     public static class ValidationHelper
     {

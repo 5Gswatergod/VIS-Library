@@ -1,9 +1,9 @@
-﻿using VISLibraryManagementSystem.Model;
+﻿using VISLMS.Model;
 using System;
 using System.Collections.Generic;
 using System.Data.SqlClient;
 
-namespace VISLibraryManagementSystem.Services
+namespace VISLMS.Services
 {
     public class BorrowService
     {

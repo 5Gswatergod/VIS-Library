@@ -1,7 +1,7 @@
 ﻿using Microsoft.EntityFrameworkCore;
-using VISLibraryManagementSystem.Models;
+using VISLMS.Models;
 
-namespace VISLibraryManagementSystem.Data
+namespace VISLMS.Data
 {
     public class VISLibraryContext : DbContext
     {

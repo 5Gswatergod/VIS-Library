@@ -39,7 +39,7 @@ CREATE TABLE MissingBooks (
     Status VARCHAR(20) DEFAULT 'Missing',           -- Values: 'Missing' or 'Found'
 );
 
-CREATE TABLE Staff (
+CREATE TABLE Staffs (
     StaffID INT PRIMARY KEY IDENTITY(1,1),
     Name NVARCHAR(255) NOT NULL,
     Role NVARCHAR(50),                              -- Values: 'Admin', 'Librarian'

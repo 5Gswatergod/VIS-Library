@@ -1,9 +1,9 @@
-﻿using VISLibraryManagementSystem.Models;
+﻿using VISLMS.Models;
 using System;
 using System.Collections.Generic;
 using System.Data.SqlClient;
 
-namespace VISLibraryManagementSystem.Services
+namespace VISLMS.Services
 {
     public class BookService
     {

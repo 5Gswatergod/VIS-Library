@@ -1,6 +1,6 @@
 ﻿using System.ComponentModel.DataAnnotations;
 
-namespace VISLibraryManagementSystem.Models
+namespace VISLMS.Models
 {
     public class Student
     {
