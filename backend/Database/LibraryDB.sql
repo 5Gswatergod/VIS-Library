@@ -6,10 +6,10 @@ GO
 
 --Tables
 CREATE TABLE Users(
-	UserID INT PRIMARY KEY IDENTITY(1, 1),          -- Auto-increment ID
-	Name NVARCHAR(100) NOT NULL,
-	UserType NVARCHAR(50) NOT NULL,                 -- e.g., 'Student', 'Staff', or 'Librarian'
-	Username NVARCHAR(50) UNIQUE NOT NULL,
+    UserID INT PRIMARY KEY IDENTITY(1, 1),          -- Auto-increment ID
+    Name NVARCHAR(100) NOT NULL,
+    UserType NVARCHAR(50) NOT NULL,                 -- e.g., 'Student', 'Staff', or 'Librarian'
+    Username NVARCHAR(50) UNIQUE NOT NULL,
     Password NVARCHAR(255) NOT NULL
 );
 
