@@ -2,16 +2,18 @@
 
 namespace VISLMS.Models
 {
-    public class Staff
+    public class Staff : User
     {
-        [Key]
-        public int StaffId { get; set; }
-        [Required]
-        public string Name { get; set; }
-        [Required]
-        public string Role { get; set; }
-        [Required]
-        public string Username { get; set; }
-        [Required]
-        public string PasswordHash { get; set; }
+        public string Department { get; set; }
+
+        public Staff(int userId, string name, string username, string password, string department) : base(userId, name, "Staff", username, password)
+        {
+            Department = department;
+        }
+
+        public override bool Verify()
+        {
+            return true;
+        }
     }
+}

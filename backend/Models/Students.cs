@@ -1,13 +1,19 @@
-﻿using System.ComponentModel.DataAnnotations;
-
-namespace VISLMS.Models
+﻿namespace VISLMS.Models
 {
-    public class Student
+    public class Student : User
     {
-        [Key]
-        public int StudentID { get; set; }
-        public string Name { get; set; }
-        public string Email { get; set; }
-        public DateTime JoinDate { get; set; }
+        public string Class { get; set; }
+
+        public Student(int userId, string name, string username, string password, string studentClass)
+            : base(userId, name, "Student", username, password)
+        {
+            Class = studentClass;
+        }
+
+        public override bool Verify()
+        {
+            // Add verification logic for Students
+            return true;
+        }
     }
 }

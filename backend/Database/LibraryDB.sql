@@ -5,6 +5,14 @@ use VISLibraryDB;
 GO
 
 --Tables
+CREATE TABLE Users(
+	UserID INT PRIMARY KEY IDENTITY(1, 1),          -- Auto-increment ID
+	Name NVARCHAR(100) NOT NULL,
+	UserType NVARCHAR(50) NOT NULL,                 -- e.g., 'Student', 'Staff', or 'Librarian'
+	Username NVARCHAR(50) UNIQUE NOT NULL,
+    Password NVARCHAR(255) NOT NULL
+);
+
 create table Books (
     BookID INT PRIMARY KEY IDENTITY(1, 1),          -- ISBN system
     Title VARCHAR (255) not null,
@@ -15,14 +23,18 @@ create table Books (
     OwnerName VARCHAR (255)                         --Books that have a owner
 )
 
-create table Students (
-    StudentId INT PRIMARY KEY IDENTITY(1, 1),       -- Auto-increment ID
-    Name varchar (255) NOT NULL,
-    Email varchar (255) unique NOT NULL,
-    Join_Date Date
-)
+CREATE TABLE Accounts (
+    AccountID INT PRIMARY KEY IDENTITY(1,1),
+    UserID INT NOT NULL,
+    no_borrowed_books INT DEFAULT 0,
+    no_reserved_books INT DEFAULT 0,
+    no_returned_books INT DEFAULT 0,
+    no_lost_books INT DEFAULT 0,
+    fine_amount DECIMAL(10, 2) DEFAULT 0.00,
+    FOREIGN KEY (UserID) REFERENCES Users(UserID)
+);
 
-create table BorrowedBooks (
+CREATE TABLE BorrowedBooks (
     BorrowID INT PRIMARY KEY IDENTITY(1,1),         -- Auto-increment ID
     BookID VARCHAR(20) NOT NULL FOREIGN KEY REFERENCES Books(BookId),
     StudentID INT NOT NULL FOREIGN KEY REFERENCES Students(StudentId),
@@ -32,19 +44,17 @@ create table BorrowedBooks (
     Status NVARCHAR(20) DEFAULT 'Borrowed'
 )
 
-CREATE TABLE MissingBooks (
-    MissingID INT IDENTITY(1,1) PRIMARY KEY,        -- Auto-increment ID
-    MissingBookID VARCHAR(20) NOT NULL FOREIGN KEY REFERENCES Books(BookId),
-    ReportedDate DATE DEFAULT GETDATE(),
-    Status VARCHAR(20) DEFAULT 'Missing',           -- Values: 'Missing' or 'Found'
+CREATE TABLE LibraryDatabase (
+    ListID INT PRIMARY KEY IDENTITY(1,1),
+    BookID NVARCHAR(13) NOT NULL,
+    FOREIGN KEY (BookID) REFERENCES Books(BookID)
 );
 
-CREATE TABLE Staffs (
-    StaffID INT PRIMARY KEY IDENTITY(1,1),
-    Name NVARCHAR(255) NOT NULL,
-    Role NVARCHAR(50),                              -- Values: 'Admin', 'Librarian'
-    Username NVARCHAR(50) UNIQUE NOT NULL,
-    PasswordHash NVARCHAR(255) NOT NULL             -- Hashed for security
+CREATE TABLE Librarians (
+    LibrarianID INT PRIMARY KEY IDENTITY(1,1),
+    UserID INT NOT NULL,
+    SearchString NVARCHAR(200),
+    FOREIGN KEY (UserID) REFERENCES Users(UserID)
 );
 
 -- Ensure ISBN is unique for each book

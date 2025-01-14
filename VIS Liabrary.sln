@@ -8,6 +8,7 @@ EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "VISLibraryManagementSystem", "VISLibraryManagementSystem", "{2E962D7F-5D13-4DBE-B844-A53F5BC6497C}"
 	ProjectSection(SolutionItems) = preProject
 		App.json = App.json
+		LibraryManagementSystem.cs = LibraryManagementSystem.cs
 		README.md = README.md
 	EndProjectSection
 EndProject
@@ -21,11 +22,15 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Database", "Database", "{F7
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Models", "Models", "{647AB515-F7F0-497F-B6E7-45C33F841F57}"
 	ProjectSection(SolutionItems) = preProject
+		Account.cs = Account.cs
 		backend\Models\Book.cs = backend\Models\Book.cs
 		backend\Models\BorrowedBook.cs = backend\Models\BorrowedBook.cs
+		Librarian.cs = Librarian.cs
+		LibraryDatabase.cs = LibraryDatabase.cs
 		backend\Models\MissingBook.cs = backend\Models\MissingBook.cs
 		backend\Models\Staff.cs = backend\Models\Staff.cs
 		backend\Models\Students.cs = backend\Models\Students.cs
+		User.cs = User.cs
 	EndProjectSection
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Services", "Services", "{52C76FAE-A35C-4514-9C53-61F55B4EDF41}"
@@ -33,7 +38,7 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Services", "Services", "{52
 		backend\Services\BookService.cs = backend\Services\BookService.cs
 		backend\Services\BorrowService.cs = backend\Services\BorrowService.cs
 		backend\Services\MissingService.cs = backend\Services\MissingService.cs
-		backend\Services\UsersService.cs = backend\Services\UsersService.cs
+		UserService.cs = UserService.cs
 	EndProjectSection
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Utilities", "Utilities", "{2433AFEF-5A8F-4FFD-8ABA-E8D53C97EAC2}"
