@@ -8,7 +8,6 @@ EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "VISLibraryManagementSystem", "VISLibraryManagementSystem", "{2E962D7F-5D13-4DBE-B844-A53F5BC6497C}"
 	ProjectSection(SolutionItems) = preProject
 		App.json = App.json
-		Program.cs = Program.cs
 		README.md = README.md
 	EndProjectSection
 EndProject
@@ -40,7 +39,6 @@ EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Utilities", "Utilities", "{2433AFEF-5A8F-4FFD-8ABA-E8D53C97EAC2}"
 	ProjectSection(SolutionItems) = preProject
 		Utilities\DatabaseHelper.cs = Utilities\DatabaseHelper.cs
-		Utilities\DataGridViewHelper.cs = Utilities\DataGridViewHelper.cs
 		Utilities\ValidationHelper.cs = Utilities\ValidationHelper.cs
 	EndProjectSection
 EndProject
